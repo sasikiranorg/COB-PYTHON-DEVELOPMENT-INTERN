@@ -1,0 +1,45 @@
+import random
+questions = [
+    ("What is the name of the variable assignment operator in Python?", "Equals"),
+	("What is the name of the data structure that is used to store a collection of unique items in Python?", "Set"),
+	("What is the name of the function that is used to print output to the console in Python?", "Print"),
+	("What is the name of the keyword that is used to define a function in Python?", "Def"),
+	("What is the name of the keyword that is used to return a value from a function in Python?", "Return"),
+	("What is the name of the keyword that is used to import a module in Python?", "Import"),
+	("What is the name of the keyword that is used to define a class in Python?", "Class"),
+	("What is the name of the keyword that is used to inherit from a class in Python?", "Inherit"),
+	("What is the name of the keyword that is used to define a method in a class in Python?", "Method"),
+	("What is the name of the keyword that is used to access the instance variables of a class in Python?", "Self"),
+	("What is the name of the keyword that is used to access the global namespace in a function in Python?", "Global"),
+	("What is the name of the keyword that is used to raise an exception in Python?", "Raise"),
+	("What is the name of the keyword that is used to handle an exception in Python?", "Try"),
+	("What is the name of the keyword that is used to finally execute a block of code regardless of whether an exception is raised or not?", "Finally"),
+	("What is the name of the data structure that is used to store a collection of key-value pairs in Python?", "Dictionary"),
+	("What is the name of the data structure that is used to store a sequence of items in Python?", "List"),
+	("What is the name of the data structure that is used to store immutable sequences of items in Python?", "Tuple"),
+	("What is the name of the Python library that is used to perform mathematical operations?", "Math"),
+	("What is the name of the Python library that is used to perform string operations?", "String"),
+	("What is the name of the Python library that is used to perform regular expression operations?", "Regex"),
+	("What is the name of the Python library that is used to perform file operations?", "Os"),
+	("What is the name of the Python library that is used to perform database operations?", "Database"),
+	("What is the name of the Python library that is used to perform web development?", "Flask"),
+	("What is the name of the Python library that is used to perform machine learning?", "TensorFlow"),
+	("What is the name of the Python library that is used to perform data science?", "NumPy"),
+	("What is the name of the Python library that is used to perform image processing?", "OpenCV"),
+	("What is the name of the Python library that is used to perform natural language processing?", "NLTK"),
+	("What is the name of the Python library that is used to perform scientific computing?", "SciPy"),
+	("What is the name of the Python library that is used to perform graphical user interface (GUI) development?", "Kivy"),
+	("What is the name of the Python library that is used to perform game development?", "Pygame"),
+]
+random.shuffle(questions)
+
+score = 0
+for question in questions:
+    print(question[0])
+    answer = input("Enter your answer: ")
+    if answer == question[1]:
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect. The correct answer is:", question[1])
+print("Your final score is:", score)
